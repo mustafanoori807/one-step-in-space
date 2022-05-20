@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+}
+
+.space{
+    background-image: url("https://stepik.org/media/attachments/lesson/452681/space.png");
+    background-size: cover;
+    width: 70vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.planet-area{
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    bottom: -10px;
+}
+
+.planet{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 60%;
+}
+
+.rocket{
+    position: absolute;
+    width: 25%;
+    transform: translate(200%, 45vh) rotate(30deg);
+}
+
+.control-panel__inner{
+    background-color: darkslategrey;
+    padding: 10px;
+    margin: 10px;
+}
+
+.control-panel{
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    right: 250px;
+    bottom: 25%;
+    background-image: repeating-linear-gradient(45deg, yellow 0 10px, black 10px 20px);
+}
+
+.check-buttons{
+    position: relative;
+    display: flex;
+    padding: 5px;
+}
+
+.levers{
+    position: relative;
+    display: flex;
+    justify-items: center;
+}
+
+input[type='range']{
+    width: 60px;
+    height: 80px;
+    flex: 1;
+    transform: rotate(-90deg);
+}
+
+input[type='checkbox']{
+    flex: 1;
+}
+
+input[value='OK']{
+    background: yellow;
+    border: none;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+
+input[value='Launch']{
+    background-color: red;
+    color: white;
+    border: white 1px solid;
+    border-radius: 50%;
+    height: 30px;
+}
+
+input[type='password']{
+    background-color: darkslategrey;
+    border: yellow 1px solid;
+    border-radius: 4px;
+    color: white;
+}
